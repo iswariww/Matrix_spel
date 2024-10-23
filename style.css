@@ -1,0 +1,135 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: "Courier New", Courier, monospace;
+  background: linear-gradient(135deg, #000000 0%, #001100 100%);
+  color: #00ff00;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Container Styling */
+.container {
+  max-width: 800px;
+  background: rgba(0, 0, 0, 0.8);
+  border: 1px solid #00ff00;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #00ff00;
+}
+
+/* Header and Paragraph Styling */
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #00ff00;
+  color: #00ff00;
+  animation: glow 2s infinite alternate;
+}
+
+p {
+  font-size: 1.2em;
+  margin: 20px 0;
+  line-height: 1.5;
+  color: #00ff00;
+}
+
+/* Pill Styling */
+.blue-pill,
+.red-pill {
+  font-weight: bold;
+}
+
+.blue-pill {
+  color: #0077ff;
+}
+
+.red-pill {
+  color: #ff0000;
+}
+
+/* Button Container */
+.buttons {
+  margin-top: 30px;
+}
+
+/* Button Styling */
+button {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  margin: 10px;
+  border: 2px solid #00ff00;
+  background: transparent;
+  color: #00ff00;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+/* Button Hover Effects */
+button:hover {
+  background: #00ff00;
+  color: black;
+  box-shadow: 0 0 15px #00ff00, 0 0 30px #00ff00;
+}
+
+#bluePillButton {
+  border-color: #0077ff;
+}
+
+#bluePillButton:hover {
+  background: #0077ff;
+  box-shadow: 0 0 15px #0077ff, 0 0 30px #0077ff;
+}
+
+#redPillButton {
+  border-color: #ff0000;
+}
+
+#redPillButton:hover {
+  background: #ff0000;
+  box-shadow: 0 0 15px #ff0000, 0 0 30px #ff0000;
+}
+
+/* Result Section */
+.result {
+  margin-top: 40px;
+  font-size: 1.5em;
+  color: #00ff00;
+  text-shadow: 0 0 8px #00ff00;
+  animation: glitch 1s infinite;
+}
+
+/* Animations */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+  }
+  to {
+    text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
+  }
+}
+
+@keyframes glitch {
+  0%,
+  100% {
+    text-shadow: 0 0 2px #00ff00;
+  }
+  25% {
+    text-shadow: -2px 2px 5px #00ff00;
+  }
+  50% {
+    text-shadow: 2px -2px 5px #00ff00;
+  }
+}

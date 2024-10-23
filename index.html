@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Escape Room Game - The Matrix</title>
+    <meta
+      name="description"
+      content="A Matrix-inspired Escape Room game where you choose between two pills to decide your fate. Take the blue pill to wake up safely, or the red pill to enter the Matrix and face new challenges."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <audio id="backgroundSound" loop>
+      <source src="matrix-ambience.mp3" type="audio/mpeg" />
+    </audio>
+
+    <div class="container">
+      <header>
+        <h1>Welcome to the Matrix Escape Room</h1>
+      </header>
+
+      <main>
+        <section class="introduction">
+          <p>
+            You are given a choice between two pills: the 'blue pill' and the
+            'red pill'.
+          </p>
+          <p>
+            Take the <span class="blue-pill">Blue Pill</span> and wake up in
+            your bed, believing whatever you want to believe. The game is over
+            OR take the <span class="red-pill">Red Pill</span> and suddenly, the
+            world melts around you. Welcome to the real world!
+          </p>
+        </section>
+
+        <section class="buttons">
+          <button
+            id="bluePillButton"
+            aria-label="Take the Blue Pill to end the game"
+          >
+            Take the Blue Pill
+          </button>
+          <button
+            id="redPillButton"
+            aria-label="Take the Red Pill to enter the Matrix"
+          >
+            Take the Red Pill
+          </button>
+        </section>
+
+        <section id="result" class="result"></section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
